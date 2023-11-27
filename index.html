@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritvik</title>
+    <title>Movies and TV Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .movie {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .tv-season-container {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tv-season {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .tv-season img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
 </head>
-
 <body>
-    <h1> <b>Ritvik </b> </h1>
-    <a href="one"><u>One</u></a>
-    <a href="two"><u>Two</u></a>
-    <a href="three"><u>Three</u></a>
-    <a href="mychoice"><u>My choice</u></a>
 
-    <h2>Favourite Foods</h2>
-    <ul>
-        <li>Apples</li>
-        <li>Pizza</li>
-        <li>Crab</li>
-        <li>Chocolate Cake</li>
-    </ul>
+    <h1>Movies</h1>
+    <div class="movie-container">
+        <!-- Movie 1 -->
+        <div class="movie">
+            <h2>The Dark Knight</h2>
+            <a href="https://m.imdb.com/title/tt0468569/?ref_=chttp_t_3" target="_blank">IMDb Link</a>
+            <img src="https://images4.alphacoders.com/573/thumb-1920-57394.jpg" alt="The Dark Knight Image">
+        </div>
 
-    <h2>Achievements</h2>
-    <div>
-        Progress in this course (100%)<progress value="100" max="100"> 100% </progress>
+        <!-- Movie 2 -->
+        <div class="movie">
+            <h2>The Lord of the Rings: The Return of the King</h2>
+            <a href="https://m.imdb.com/title/tt0167260/" target="_blank">IMDb Link</a>
+            <img src="https://images7.alphacoders.com/112/1123161.jpg" alt="The Lord of the Rings: The Return of the King Image">
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie">
+            <h2>The Matrix</h2>
+            <a href="https://m.imdb.com/title/tt0133093/" target="_blank">IMDb Link</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8SNKpQIt9oXVtD9k18TgzAr4T396gDPdJw&usqp=CAU" alt="The Matrix Image">
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie">
+            <h2>Terminator</h2>
+            <a href="https://m.imdb.com/title/tt0088247/" target="_blank">IMDb Link</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmb9g1w9vvDDFyUkrfQySUndG8xYP8e-0Uw&usqp=CAU" alt="Terminator Image">
+        </div>
+
+        <!-- Movie 5 -->
+        <div class="movie">
+            <h2>The Lion King</h2>
+            <a href="https://m.imdb.com/title/tt0110357/" target="_blank">IMDb Link</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9pfPQ-WG8I3BD8aQxIyRQxP6TyzSgt_CXA&usqp=CAU" alt="The Lion King Image">
+        </div>
     </div>
-    <div>
-        Progress in the Specialization capstone (20%),<progress value="20" max="100"> 20% </progress>
+
+    <h1 class="tv-season-container">TV Seasons</h1>
+    <div class="tv-season-container">
+        <!-- TV Season 1 -->
+        <div class="tv-season">
+            <h2>Farzi</h2>
+            <a href="https://m.imdb.com/title/tt15477488" target="_blank">IMDb Link</a>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c3d09e164004067.Y3JvcCwxNDAwLDEwOTUsMCw3Nzk.jpg" alt="Stranger Things - Season 1 Image">
+        </div>
+
+        <!-- TV Season 2 -->
+        <div class="tv-season">
+            <h2>Alice in Borderland</h2>
+            <a href="https://m.imdb.com/title/tt10795658/" target="_blank">IMDb Link</a>
+            <img src="https://wallpapers.com/images/featured/alice-in-borderland-79olr58iub9u7zbl.jpg" alt="The Mandalorian - Season 2 Image">
+        </div>
+
+        <!-- TV Season 3 -->
+        <div class="tv-season">
+            <h2>Rick and Morty</h2>
+            <a href="https://m.imdb.com/title/tt2861424/" target="_blank">IMDb Link</a>
+            <img src="https://wallpapers.com/images/hd/rick-and-morty-fighting-green-aliens-zp6odvm0462ff5c2.jpg" alt="Friends - Season 5 Image">
+        </div>
+
+        <!-- TV Season 4 -->
+        <div class="tv-season">
+            <h2>Business Proposal</h2>
+            <a href="https://m.imdb.com/title/tt14819828/" target="_blank">IMDb Link</a>
+            <img src="https://w0.peakpx.com/wallpaper/797/640/HD-wallpaper-kim-sejeong-updates-business-proposal.jpg" alt="Game of Thrones - Season 4 Image">
+        </div>
+
+        <!-- TV Season 5 -->
+        <div class="tv-season">
+            <h2>Death Note</h2>
+            <a href="https://m.imdb.com/title/tt0877057" target="_blank">IMDb Link</a>
+            <img src="https://wallpapers.com/images/featured/death-note-phone-vnp0whbmxr0koupq.jpg" alt="Breaking Bad - Season 3 Image">
+        </div>
     </div>
-    <div>
-        Progress in life goals (67%) <progress value="67" max="100"> 67% </progress>
-    </div>
 
-    <h2>More About Me</h2>
-
-    <details open>
-        <summary>My Childhood</summary> I grew up in Ashtabula Ohio. I lived near Lake erie and I really miss the sunsets over the water.</details>
-
-    <footer>
-        <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="WD$E"> This page was created by Ritvik &amp; Colleen van Lent. To learn more about web design, visit
-        <a href="http://www.intro-webdesign.com"><u>Intro to Web design</u></a> .
-    </footer>
+    <script>
+        // Add an error event listener to handle image loading errors
+        document.querySelectorAll('.movie img, .tv-season img').forEach(img => {
+            img.addEventListener('error', function () {
+                img.src = 'path/to/placeholder.jpg'; // Replace with your placeholder image path
+                img.alt = 'Image not available';
+            });
+        });
+    </script>
 
 </body>
-
 </html>
